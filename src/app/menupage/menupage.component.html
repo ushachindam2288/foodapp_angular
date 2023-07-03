@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Fusion</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\veera\Downloads\foodordering_dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>Food Fusion</h1>
+  </header>
+  <div class="navbar">
+    <a class="home_a" href="#">Home</a>
+    <a href="#">Offers</a>
+    <a href="#">Orders</a>
+    <a href="http://localhost:4200/mycart">  Cart</a>
+  </div>
+  
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search" [(ngModel)]="searchText">
+    <button type="submit" (click)="onSearch()">Go</button>
+  </div>
+ 
+  <section>
+    
+    <h2>Menu</h2>
+    <div>
+    <div class="menu-list">
+      <div class ="card shadow p-3 mb-5 bg-white rounded">
+        <h3> cheese burger</h3>
+        <img src="https://img.freepik.com/premium-photo/cheeseburger-isolated-white-background_742252-2213.jpg?w=2000">
+        <p>Delicious burger with beef patty, lettuce, tomato, and cheese.</p>
+        
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+
+        
+        
+
+
+         
+      </div> 
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>chicken burger</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamzfaa34E9h6OxSkJIT0CV7jyPNvXrLe56w&usqp=CAU">
+        <p>Tasty pizza with various toppings and melted cheese.</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3> veg pizza</h3>
+        <img src="https://media.istockphoto.com/id/186820551/photo/pizza-fresh-tomatoes-arugula-burrata-on-wooden-plate-white-background.webp?b=1&s=170667a&w=0&k=20&c=k2owh07VOkXvmvxezikEyyI_AfmmNfQsBTrWd-z_lvs=">
+        <p>Tasty pizza with various toppings and melted cheese.</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>paneer onion pizza</h3>
+        <img src="https://media.istockphoto.com/id/1387856824/photo/hot-cheese-stringy-slice-lifted-of-full-baked-pizza-isolated-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=PrhzsZy5orQU9GRYmgvpiV0DcX195zdJP-3Y0ITlAow=">
+        <p>Tasty pizza with various toppings and melted cheese.</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+ 
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>veg Pizza</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWPInvXB-VAHyDkNDsr4SdYgtyDT-pnXxvw&usqp=CAU">
+        <p>Tasty pizza with various toppings and melted cheese.</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>chickenn kebab</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdlbrh3nQzI3mXTj-77fqMtvP73_aLzRh0bw&usqp=CAU">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>Roasted Chicken</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFDiFXLIIE4yKVkRZtsa6pNxxRzuyWg91kYSEPCOoYS-lzD68eN89E7klHCx5Dc49QCw&usqp=CAU">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>Chicken Lollipops</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUv0lQIPM9qa2Ajzgnk3_0liywoY_iJNZKtg&usqp=CAU">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>chicken biryani</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXInh46uEhKBx1r3BMUy10kgjxjXZUi01Zw&usqp=CAU">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>Mutton biryani</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGla_pgd7FInzdmu9SkoMx8xRuwBTavz0xCA&usqp=CAU">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>Veg biryani</h3>
+        <img src="https://t4.ftcdn.net/jpg/02/17/31/89/360_F_217318971_nSg0pl4QB0k8hxIFYB2CbWL7lWVUnYeR.jpg">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>cool drinks</h3>
+        <img src="https://c-pi.niceshops.com/upload/image/product/large/default/45787_73f02687.1024x1024.jpg">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <a href="http://localhost:4200/mycart">  <button> Add!</button></a>
+      </div>
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+        <h3>Milk shakes</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8QLUwpBHlgc4Dc-XgXYaiQixKKPGGMHukfQ&usqp=CAU">
+        <p>Spicy chicken biryani.A spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+</html>
+

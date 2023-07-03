@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY CART</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\veera\Downloads\foodordering_dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>MY CART</h1>   
+  </header>
+  <div class="navbar">
+    <a class="home_a" href="#">Home</a>
+    <!-- <a href="#"> check out </a> -->
+    <a href="http://localhost:4200/checkout">check out</a>
+    <!-- <a href="#"> total amout</a> -->
+
+    <a href="http://localhost:4200/menupage"> back</a>
+  </div> 
+
+    <h2>please enter order detailes</h2>
+    <form (ngSubmit)="submitForm()" #orderForm="ngForm">
+      <div>
+        <label for="name">Item name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="order.name" required>
+      </div>
+      <div>
+        <label for="quantity">Quantity You Need</label>
+        <input type="text" id="quantity" name="name" [(ngModel)]="order.quantity" required>
+      </div>
+      <!-- <div>
+        <label for="price">pay Amount</label>
+        <input type="text" id="price" name="name" [(ngModel)]="order.price" required>
+      </div> -->
+      <button type="submit" [disabled]="!orderForm.valid">OK </button>
+</form>
+</body>
+
+</html>
+<a href="http://localhost:4200/orderconfirmed">  <button>Confirm!</button></a>
+

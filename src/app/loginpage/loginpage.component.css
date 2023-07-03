@@ -1,0 +1,56 @@
+
+body {
+  background-image: url("https://c0.wallpaperflare.com/preview/341/392/39/menu-notebook-background-spices.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  height: 95vh;
+  align-items: center !important;
+}
+
+.login-card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.login-card h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5500;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+button[type="submit"]:hover {
+  background-color: #e64700;
+}
